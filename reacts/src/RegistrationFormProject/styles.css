@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background: #f8ecd4;
+}
+
+section {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section .signin {
+    background: #f9d6ad;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+section .signin .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section .signin .content h2 {
+    font-size: 2em;
+    color: #ff884d;
+    text-transform: uppercase;
+}
+
+section .signin .content .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+section .signin .content .form .inputBox {
+    position: relative;
+    width: 100%;
+}
+
+section .signin .content .form .inputBox input {
+    position: relative;
+    width: 100%;
+    background: #ffe5cc;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    border-radius: 8px;
+    color: #663300;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+section .signin .content .form .inputBox i {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    font-style: normal;
+    color: #996633;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.signin .content .form .inputBox input:focus ~ i,
+.signin .content .form .inputBox input:valid ~ i {
+    transform: translateY(-7.5px);
+    font-size: 0.8em;
+    color: #996633;
+}
+
+.signin .content .form .links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signin .content .form .links a {
+    color: #663300;
+    text-decoration: none;
+}
+
+.signin .content .form .inputBox input[type="submit"] {
+    padding: 15px;
+    background: #ff884d;
+    color: #663300;
+    font-weight: 600;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+input[type="submit"]:active {
+    opacity: 0.8;
+}

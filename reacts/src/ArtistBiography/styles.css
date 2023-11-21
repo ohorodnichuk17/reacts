@@ -1,0 +1,55 @@
+.component-container {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.bio-container {
+    background-color: #fdebd0;
+}
+
+.famous-painting-container {
+    background-color: #fadbd8;
+}
+
+.painting-collection-container {
+    background-color: #d4efdf;
+}
+
+.add-painting-container {
+    background-color: #e8daef;
+}
+
+.painting-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+.input-field {
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.submit-button {
+    background-color: #5e8e3e;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.submit-button:hover {
+    background-color: #405c29;
+}
